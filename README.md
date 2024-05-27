@@ -3,6 +3,8 @@
 
 # Nuxt Locomotive Scroll
 
+A Nuxt module to easily integrate [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) into your Nuxt application.
+
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
@@ -10,26 +12,58 @@
 
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-locomotive-scroll?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [🏀 Online playground](https://stackblitz.com/github/arashsheyda/nuxt-locomotive-scroll?file=playground%2Fapp.vue)
+- [📖 &nbsp;Documentation](https://docs.arashsheyda.me/nuxt-locomotive-scroll)
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- 🚀 &nbsp;Easy to use
+- 🎨 &nbsp;Customizable
 
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
 
 ```bash
-npx nuxi module add nuxt-locomotive-scroll
+npx nuxi module add locomotive-scroll
 ```
 
-That's it! You can now use Nuxt Locomotive Scroll in your Nuxt app ✨
+That's it! You can now use Nuxt Locomotive Scroll in your Nuxt app ✨ or you can install it manually:
 
+```bash
+# npm
+npm install nuxt-locomotive-scroll
+
+# yarn
+yarn add nuxt-locomotive-scroll
+
+# pnpm
+pnpm add nuxt-locomotive-scroll
+```
+
+and add `nuxt-locomotive-scroll` to the `modules` section of `nuxt.config`.
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-locomotive-scroll',
+  ],
+})
+```
+
+## Usage
+
+Just add `v-locomotive` directive to the element you want to animate.
+
+```vue
+<template>
+  <div v-locomotive>
+    <!-- Your content here -->
+  </div>
+</template>
+```
+
+you can check the [playground](https://github.com/arashsheyda/nuxt-locomotive-scroll/tree/main/playground) for more examples.
 
 ## Contribution
 
